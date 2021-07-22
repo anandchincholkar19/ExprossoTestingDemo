@@ -2,6 +2,7 @@ package com.example.exprossotestingdemo
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
@@ -45,9 +46,32 @@ class MainActivityTest{
 
     @Test
     fun test_navSecondaryActivity() {
+       val activitySceanario = ActivityScenario
+            .launch(MainActivity::class.java)
+        onView(withId(R.id.button_next_activity)).perform(click())
+        onView((withId(R.id.secondary))).check(matches(isDisplayed()))
+    }
+
+//    @Test
+//    fun test_navToMainActiivty() {
+
+        /* method 1 */
+//        val activitySceanario = ActivityScenario
+//            .launch(MainActivity::class.java)
+//        onView(withId(R.id.button_next_activity)).perform(click())
+//        onView((withId(R.id.secondary))).check(matches(isDisplayed()))
+//        onView(withId(R.id.button_back)).perform(click())
+//        onView(withId(R.id.main)).check(matches(isDisplayed()))
+//    }
+
+    @Test
+    fun test_navToMainActiivty() {
+        /* method 2 */
         val activitySceanario = ActivityScenario
             .launch(MainActivity::class.java)
         onView(withId(R.id.button_next_activity)).perform(click())
         onView((withId(R.id.secondary))).check(matches(isDisplayed()))
+        pressBack()
+        onView(withId(R.id.main)).check(matches(isDisplayed()))
     }
 }
