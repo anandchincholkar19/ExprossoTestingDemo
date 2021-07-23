@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876807997112",
+    "project_id": "testexpresso-6363c",
+    "storage_bucket": "testexpresso-6363c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876807997112:android:fc0fb4667f11c8c9c8d64d",
+        "android_client_info": {
+          "package_name": "com.example.exprossotestingdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876807997112-a4hq4jut4bnecepn2k6lkgd9a06n4qr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJpy0Y0QlodWUaOHBm7s0iaawAonZd_Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876807997112-a4hq4jut4bnecepn2k6lkgd9a06n4qr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
