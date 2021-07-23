@@ -15,4 +15,6 @@
     <string name="text_list_movie_star_actors">Star Actors</string>
     <string name="text_directors">Directors:</string>
     <string name="text_star_actors">Star Actors:</string>
+    <string name="txt_name">Enter name</string>
+    <string name="text_ok">Ok</string>
 </resources>
